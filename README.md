@@ -1,8 +1,8 @@
 # 💫 About Me:
 🔭 I'm currently working on a variety of database and AI projects<br>
 👨‍💻 All of my projects are available on [GitHub](https://github.com/kasireddyasam)<br>
-🌱 I’m currently learning more about advanced Machine Learning techniques and cybersecurity<br>
-💬 Ask me about anything related to Python, SQL, and Machine Learning<br>
+🌱 I’m currently learning more about advanced Machine Learning techniques and AI <br>
+💬 Ask me about anything related to DSA, Python, SQL, and Machine Learning<br>
 📫 How to reach me: kasireddy2024@gmail.com<br>
 
 ## 🌐 Socials:
@@ -16,8 +16,9 @@
 ![](https://github-readme-streak-stats.herokuapp.com/?user=kasireddyasam&theme=dark&hide_border=false)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=kasireddyasam&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
 
-### ✍ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+### ✍ My Life Line
+<strong>In order to succeed, your desire for success should be greater than your fear of failure</strong>
+
 
 
 
