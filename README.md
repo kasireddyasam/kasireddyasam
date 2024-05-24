@@ -34,41 +34,15 @@
 ![Streak Stats](https://github-readme-streak-stats.herokuapp.com/?user=kasireddyasam&theme=dark&hide_border=false)
 ![Overall Stats](https://github-readme-stats.vercel.app/api?username=kasireddyasam&theme=dark&hide_border=false&include_all_commits=true&count_private=true)
 
-## Coding Practice
-
-<!-- LEETCODE-STATS:START -->
-<div align="center" style="border: 2px solid #e1e4e8; border-radius: 8px; padding: 20px; background-color: #1e1e2e; color: #e1e4e8;">
-  <h2 style="color: #f0db4f;">Leetcode Data</h2>
-  <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 20px;">
-    <div style="text-align: center; color: #61dafb;">
-      <div style="font-size: 24px;">All</div>
-      <div style="font-size: 32px; font-weight: bold;">90</div>
-      <div>3157</div>
-    </div>
-    <button style="background-color: #e74c3c; border: none; padding: 10px 20px; border-radius: 4px; color: white; cursor: pointer;">Remove</button>
-  </div>
-  <div style="margin-top: 16px;">
-    <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 8px;">
-      <div style="background-color: #27ae60; color: white; padding: 4px 8px; border-radius: 4px;">Easy</div>
-      <div style="margin-left: 8px;">44 / 795</div>
-    </div>
-    <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 8px;">
-      <div style="background-color: #f39c12; color: white; padding: 4px 8px; border-radius: 4px;">Medium</div>
-      <div style="margin-left: 8px;">39 / 1658</div>
-    </div>
-    <div style="display: flex; justify-content: center; align-items: center;">
-      <div style="background-color: #c0392b; color: white; padding: 4px 8px; border-radius: 4px;">Hard</div>
-      <div style="margin-left: 8px;">7 / 704</div>
-    </div>
-  </div>
-</div>
-<!-- LEETCODE-STATS:END -->
-
-
-
-
 ### ✍ My Life Line
-<strong>In order to succeed, your desire for success should be greater than your fear of failure</strong>
+
+<div style="font-family: 'Courier New', Courier, monospace; font-size: 26px; color: #f0db4f; text-align: center; margin-top: 20px; padding: 10px; border: 2px solid #f0db4f; border-radius: 10px; background-color: #1e1e2e; font-style: italic; text-shadow: 1px 1px 2px #000;">
+    <em><strong>In order to succeed, your desire for success should be greater than your fear of failure</strong></em>
+</div>
+
+
+
+
 
 
 
