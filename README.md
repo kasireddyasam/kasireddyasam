@@ -5,7 +5,6 @@
 📫 How to reach me: [kasireddy2024@gmail.com](mailto:kasireddy2024@gmail.com)<br>
 🔗 Connect with me on LinkedIn: [Kasi Reddy Asam](https://www.linkedin.com/in/kasireddy-asam-bb8038283/)
 
-
 ## 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=LinkedIn&logoColor=white)](https://www.linkedin.com/in/kasireddy-asam-bb8038283/) [![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?logo=GitHub&logoColor=white)](https://github.com/kasireddyasam)
 
@@ -29,8 +28,6 @@
 ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
 ![NLTK](https://img.shields.io/badge/NLTK-%23d3b4d2.svg?style=for-the-badge&logo=Natural%20Language%20Toolkit&logoColor=white)
 ![spaCy](https://img.shields.io/badge/spaCy-%2306A77D.svg?style=for-the-badge&logo=spaCy&logoColor=white)
-
-
 
 # 📊 GitHub Stats:
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=kasireddyasam&theme=dark&hide_border=false)
