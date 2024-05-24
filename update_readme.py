@@ -6,6 +6,7 @@ def fetch_leetcode_stats(username):
     if response.status_code == 200:
         return response.json()
     else:
+        print(f"Failed to fetch data for {username}, status code: {response.status_code}")
         return None
 
 def update_readme(stats):
@@ -45,6 +46,9 @@ def update_readme(stats):
     ]
 
     content = content[:start_idx] + new_content + content[end_idx:]
+    
+    print("New content to be added to README:")
+    print("".join(new_content))
 
     with open(readme_path, "w") as file:
         file.writelines(content)
@@ -56,4 +60,5 @@ if __name__ == "__main__":
         update_readme(stats)
     else:
         print("Failed to fetch LeetCode stats")
+
 
