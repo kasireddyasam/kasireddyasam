@@ -46,12 +46,10 @@ def update_readme(stats):
     ]
 
     content = content[:start_idx] + new_content + content[end_idx:]
-    
-    print("New content to be added to README:")
-    print("".join(new_content))
 
     with open(readme_path, "w") as file:
         file.writelines(content)
+        print(f"README.md updated successfully with new content.")
 
 if __name__ == "__main__":
     username = "kasireddy_13177"  # LeetCode username
