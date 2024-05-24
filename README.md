@@ -37,8 +37,10 @@
 ![Streak Stats](https://github-readme-streak-stats.herokuapp.com/?user=kasireddyasam&theme=dark&hide_border=false)
 ![Overall Stats](https://github-readme-stats.vercel.app/api?username=kasireddyasam&theme=dark&hide_border=false&include_all_commits=true&count_private=true)
 
+## Coding Practice
 
-
+<!-- LEETCODE-STATS:START -->
+<!-- LEETCODE-STATS:END -->
 
 ### ✍ My Life Line
 <strong>In order to succeed, your desire for success should be greater than your fear of failure</strong>
