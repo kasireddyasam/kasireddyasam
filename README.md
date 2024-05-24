@@ -37,32 +37,33 @@
 ## Coding Practice
 
 <!-- LEETCODE-STATS:START -->
-<div align="center" style="border: 1px solid #e1e4e8; border-radius: 6px; padding: 16px; background-color: #282c34; color: white;">
-  <h2>Leetcode Data</h2>
-  <div style="display: flex; justify-content: space-between; align-items: center;">
+<div align="center" style="border: 2px solid #e1e4e8; border-radius: 8px; padding: 20px; background-color: #1c1c1c; color: #e1e4e8;">
+  <h2 style="color: #f0db4f;">Leetcode Data</h2>
+  <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 20px;">
     <div style="text-align: center;">
-      <div style="font-size: 24px;">All</div>
+      <div style="font-size: 24px; color: #61dafb;">All</div>
       <div style="font-size: 32px; font-weight: bold;">90</div>
-      <div>3157</div>
+      <div style="color: #61dafb;">3157</div>
     </div>
-    <button style="background-color: #ff4d4f; border: none; padding: 10px 20px; border-radius: 4px; color: white; cursor: pointer;">Remove</button>
+    <button style="background-color: #e74c3c; border: none; padding: 10px 20px; border-radius: 4px; color: white; cursor: pointer;">Remove</button>
   </div>
   <div style="margin-top: 16px;">
-    <div style="display: flex; justify-content: center; align-items: center;">
-      <div style="background-color: green; color: white; padding: 4px 8px; border-radius: 4px;">Easy</div>
+    <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 8px;">
+      <div style="background-color: #27ae60; color: white; padding: 4px 8px; border-radius: 4px;">Easy</div>
       <div style="margin-left: 8px;">44 / 795</div>
     </div>
-    <div style="display: flex; justify-content: center; align-items: center; margin-top: 8px;">
-      <div style="background-color: orange; color: white; padding: 4px 8px; border-radius: 4px;">Medium</div>
+    <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 8px;">
+      <div style="background-color: #f39c12; color: white; padding: 4px 8px; border-radius: 4px;">Medium</div>
       <div style="margin-left: 8px;">39 / 1658</div>
     </div>
-    <div style="display: flex; justify-content: center; align-items: center; margin-top: 8px;">
-      <div style="background-color: red; color: white; padding: 4px 8px; border-radius: 4px;">Hard</div>
+    <div style="display: flex; justify-content: center; align-items: center;">
+      <div style="background-color: #c0392b; color: white; padding: 4px 8px; border-radius: 4px;">Hard</div>
       <div style="margin-left: 8px;">7 / 704</div>
     </div>
   </div>
 </div>
 <!-- LEETCODE-STATS:END -->
+
 
 
 ### ✍ My Life Line
