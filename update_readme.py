@@ -13,11 +13,9 @@ def update_readme(stats):
     with open(readme_path, "r") as file:
         content = file.readlines()
 
-    # Find the section to update
     start_idx = content.index("<!-- LEETCODE-STATS:START -->\n") + 1
     end_idx = content.index("<!-- LEETCODE-STATS:END -->\n")
 
-    # New content to insert
     new_content = [
         '<div align="center" style="border: 1px solid #e1e4e8; border-radius: 6px; padding: 16px; background-color: #282c34; color: white;">\n',
         '  <h2>Leetcode Data</h2>\n',
@@ -46,16 +44,16 @@ def update_readme(stats):
         '</div>\n'
     ]
 
-    # Update the content
     content = content[:start_idx] + new_content + content[end_idx:]
 
     with open(readme_path, "w") as file:
         file.writelines(content)
 
 if __name__ == "__main__":
-    username = "your_leetcode_username"  # Replace with your LeetCode username
+    username = "kasireddy_13177"  # LeetCode username
     stats = fetch_leetcode_stats(username)
     if stats:
         update_readme(stats)
     else:
         print("Failed to fetch LeetCode stats")
+
