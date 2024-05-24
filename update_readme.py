@@ -15,10 +15,10 @@ def fetch_interviewbit_stats(username):
     if response.status_code == 200:
         soup = BeautifulSoup(response.content, 'html.parser')
         stats = {
-            "rank": soup.find("div", {"class": "stat"})[0].text.strip(),
-            "score": soup.find("div", {"class": "stat"})[1].text.strip(),
-            "problems_solved": soup.find("div", {"class": "stat"})[2].text.strip(),
-            "streak": soup.find("div", {"class": "stat"})[3].text.strip()
+            "rank": soup.find("div", {"class": "stat"}).text.strip(),
+            "score": soup.find_all("div", {"class": "stat"})[1].text.strip(),
+            "problems_solved": soup.find_all("div", {"class": "stat"})[2].text.strip(),
+            "streak": soup.find_all("div", {"class": "stat"})[3].text.strip()
         }
         return stats
     else:
@@ -33,13 +33,13 @@ def update_readme(leetcode_stats, interviewbit_stats):
     end_idx = content.index("<!-- LEETCODE-STATS:END -->\n")
 
     new_content = [
-        '<div align="center" style="border: 2px solid #e1e4e8; border-radius: 8px; padding: 20px; background-color: #1e1e2e; color: #e1e4e8;">\n',
+        '<div align="center" style="border: 2px solid #e1e4e8; border-radius: 8px; padding: 20px; background-color: #1c1c1c; color: #e1e4e8;">\n',
         '  <h2 style="color: #f0db4f;">Leetcode Data</h2>\n',
         '  <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 20px;">\n',
-        '    <div style="text-align: center; color: #61dafb;">\n',
-        '      <div style="font-size: 24px;">All</div>\n',
+        '    <div style="text-align: center;">\n',
+        '      <div style="font-size: 24px; color: #61dafb;">All</div>\n',
         f'      <div style="font-size: 32px; font-weight: bold;">{leetcode_stats["totalSolved"]}</div>\n',
-        f'      <div>{leetcode_stats["totalQuestions"]}</div>\n',
+        f'      <div style="color: #61dafb;">{leetcode_stats["totalQuestions"]}</div>\n',
         '    </div>\n',
         '    <button style="background-color: #e74c3c; border: none; padding: 10px 20px; border-radius: 4px; color: white; cursor: pointer;">Remove</button>\n',
         '  </div>\n',
@@ -59,23 +59,23 @@ def update_readme(leetcode_stats, interviewbit_stats):
         '  </div>\n',
         '</div>\n',
         '<br>\n',
-        '<div align="center" style="border: 2px solid #e1e4e8; border-radius: 8px; padding: 20px; background-color: #1e1e2e; color: #e1e4e8;">\n',
+        '<div align="center" style="border: 2px solid #e1e4e8; border-radius: 8px; padding: 20px; background-color: #1c1c1c; color: #e1e4e8;">\n',
         '  <h2 style="color: #f0db4f;">InterviewBit Data</h2>\n',
         '  <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 20px;">\n',
-        '    <div style="text-align: center; color: #61dafb;">\n',
-        '      <div style="font-size: 24px;">Rank</div>\n',
+        '    <div style="text-align: center;">\n',
+        '      <div style="font-size: 24px; color: #61dafb;">Rank</div>\n',
         f'      <div style="font-size: 32px; font-weight: bold;">{interviewbit_stats["rank"]}</div>\n',
         '    </div>\n',
-        '    <div style="text-align: center; color: #61dafb;">\n',
-        '      <div style="font-size: 24px;">Score</div>\n',
+        '    <div style="text-align: center;">\n',
+        '      <div style="font-size: 24px; color: #61dafb;">Score</div>\n',
         f'      <div style="font-size: 32px; font-weight: bold;">{interviewbit_stats["score"]}</div>\n',
         '    </div>\n',
-        '    <div style="text-align: center; color: #61dafb;">\n',
-        '      <div style="font-size: 24px;">Problems Solved</div>\n',
+        '    <div style="text-align: center;">\n',
+        '      <div style="font-size: 24px; color: #61dafb;">Problems Solved</div>\n',
         f'      <div style="font-size: 32px; font-weight: bold;">{interviewbit_stats["problems_solved"]}</div>\n',
         '    </div>\n',
-        '    <div style="text-align: center; color: #61dafb;">\n',
-        '      <div style="font-size: 24px;">Streak</div>\n',
+        '    <div style="text-align: center;">\n',
+        '      <div style="font-size: 24px; color: #61dafb;">Streak</div>\n',
         f'      <div style="font-size: 32px; font-weight: bold;">{interviewbit_stats["streak"]}</div>\n',
         '    </div>\n',
         '  </div>\n',
@@ -89,7 +89,7 @@ def update_readme(leetcode_stats, interviewbit_stats):
 
 if __name__ == "__main__":
     leetcode_username = "kasireddy_13177"  # LeetCode username
-    interviewbit_username = "Kasireddy Asam"  # InterviewBit username
+    interviewbit_username = "kasireddy-asam"  # InterviewBit username
 
     leetcode_stats = fetch_leetcode_stats(leetcode_username)
     interviewbit_stats = fetch_interviewbit_stats(interviewbit_username)
