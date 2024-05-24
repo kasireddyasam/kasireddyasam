@@ -36,24 +36,6 @@ def update_readme(stats):
         '      <div style="background-color: orange; color: white; padding: 4px 8px; border-radius: 4px;">Medium</div>\n',
         f'      <div style="margin-left: 8px;">{stats["mediumSolved"]} / {stats["totalMedium"]}</div>\n',
         '    </div>\n',
-        '    <div style="display: flex; justify-content: center; align-items: center; margin-top: 8px;">\n',
-        '      <div style="background-color: red; color: white; padding: 4px 8px; border-radius: 4px;">Hard</div>\n',
-        f'      <div style="margin-left: 8px;">{stats["hardSolved"]} / {stats["totalHard"]}</div>\n',
-        '    </div>\n',
-        '  </div>\n',
-        '</div>\n'
-    ]
+        '    <div style="display: flex; justify-content: center; align-items: center; margin-top: 8px
 
-    content = content[:start_idx] + new_content + content[end_idx:]
-
-    with open(readme_path, "w") as file:
-        file.writelines(content)
-
-if __name__ == "__main__":
-    username = "kasireddy_13177"  # LeetCode username
-    stats = fetch_leetcode_stats(username)
-    if stats:
-        update_readme(stats)
-    else:
-        print("Failed to fetch LeetCode stats")
 
