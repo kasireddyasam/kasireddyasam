@@ -3,6 +3,9 @@ name: Update README with LeetCode Stats
 on:
   schedule:
     - cron: '0 * * * *'  # Runs every hour
+  push:
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
