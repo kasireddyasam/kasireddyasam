@@ -37,13 +37,13 @@
 ## Coding Practice
 
 <!-- LEETCODE-STATS:START -->
-<div align="center" style="border: 2px solid #e1e4e8; border-radius: 8px; padding: 20px; background-color: #1c1c1c; color: #e1e4e8;">
+<div align="center" style="border: 2px solid #e1e4e8; border-radius: 8px; padding: 20px; background-color: #1e1e2e; color: #e1e4e8;">
   <h2 style="color: #f0db4f;">Leetcode Data</h2>
   <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 20px;">
-    <div style="text-align: center;">
-      <div style="font-size: 24px; color: #61dafb;">All</div>
+    <div style="text-align: center; color: #61dafb;">
+      <div style="font-size: 24px;">All</div>
       <div style="font-size: 32px; font-weight: bold;">90</div>
-      <div style="color: #61dafb;">3157</div>
+      <div>3157</div>
     </div>
     <button style="background-color: #e74c3c; border: none; padding: 10px 20px; border-radius: 4px; color: white; cursor: pointer;">Remove</button>
   </div>
@@ -63,6 +63,7 @@
   </div>
 </div>
 <!-- LEETCODE-STATS:END -->
+
 
 
 
