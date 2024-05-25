@@ -1,6 +1,14 @@
 import requests
 from bs4 import BeautifulSoup
 
+def fetch_leetcode_stats(username):
+    url = f"https://leetcode-stats-api.herokuapp.com/{username}"
+    response = requests.get(url)
+    if response.status_code == 200:
+        return response.json()
+    else:
+        return None
+
 def fetch_interviewbit_stats(username):
     url = f"https://www.interviewbit.com/profile/{username}"
     response = requests.get(url)
@@ -11,18 +19,18 @@ def fetch_interviewbit_stats(username):
     soup = BeautifulSoup(response.content, "html.parser")
     
     try:
-        easy = soup.find("div", class_="profile-progress-card_stat profile-progress-card_stat--easy")
-        medium = soup.find("div", class_="profile-progress-card_stat profile-progress-card_stat--medium")
-        hard = soup.find("div", class_="profile-progress-card_stat profile-progress-card_stat--hard")
-        total = soup.find("div", class_="profile-progress-card_stat profile-progress-card_stat--total")
+        easy_div = soup.find("div", class_="profile-progress-card_stat profile-progress-card_stat--easy")
+        medium_div = soup.find("div", class_="profile-progress-card_stat profile-progress-card_stat--medium")
+        hard_div = soup.find("div", class_="profile-progress-card_stat profile-progress-card_stat--hard")
+        total_div = soup.find("div", class_="profile-progress-card_stat profile-progress-card_stat--total")
         
-        if easy is None or medium is None or hard is None or total is None:
+        if easy_div is None or medium_div is None or hard_div is None or total_div is None:
             raise AttributeError("Failed to find one or more elements on the InterviewBit profile page.")
         
-        easy_solved = easy.find_all("span")[1].text.strip()
-        medium_solved = medium.find_all("span")[1].text.strip()
-        hard_solved = hard.find_all("span")[1].text.strip()
-        total_solved = total.find_all("span")[1].text.strip()
+        easy_solved = easy_div.find_all("span")[1].text.strip()
+        medium_solved = medium_div.find_all("span")[1].text.strip()
+        hard_solved = hard_div.find_all("span")[1].text.strip()
+        total_solved = total_div.find_all("span")[1].text.strip()
         
         stats = {
             "easy": easy_solved,
@@ -41,63 +49,27 @@ def update_readme(leetcode_stats, interviewbit_stats):
         content = file.readlines()
 
     # Update LeetCode stats
-    start_idx = content.index("<!-- LEETCODE-STATS:START -->\n") + 1
-    end_idx = content.index("<!-- LEETCODE-STATS:END -->\n")
+    leetcode_start_idx = content.index("## LeetCode Progress\n") + 1
+    leetcode_end_idx = leetcode_start_idx + 4
 
     leetcode_content = [
-        '<div align="center" style="border: 2px solid #e1e4e8; border-radius: 8px; padding: 20px; background-color: #1c1c1c; color: #e1e4e8;">\n',
-        '  <h2 style="color: #f0db4f;">Leetcode Data</h2>\n',
-        '  <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 20px;">\n',
-        '    <div style="text-align: center;">\n',
-        '      <div style="font-size: 24px; color: #61dafb;">All</div>\n',
-        f'      <div style="font-size: 32px; font-weight: bold;">{leetcode_stats["totalSolved"]}</div>\n',
-        f'      <div style="color: #61dafb;">{leetcode_stats["totalQuestions"]}</div>\n',
-        '    </div>\n',
-        '    <div style="text-align: center;">\n',
-        '      <div style="background-color: #27ae60; color: white; padding: 4px 8px; border-radius: 4px;">Easy</div>\n',
-        f'      <div style="margin-left: 8px;">{leetcode_stats["easySolved"]} / {leetcode_stats["totalEasy"]}</div>\n',
-        '    </div>\n',
-        '    <div style="text-align: center;">\n',
-        '      <div style="background-color: #f39c12; color: white; padding: 4px 8px; border-radius: 4px;">Medium</div>\n',
-        f'      <div style="margin-left: 8px;">{leetcode_stats["mediumSolved"]} / {leetcode_stats["totalMedium"]}</div>\n',
-        '    </div>\n',
-        '    <div style="text-align: center;">\n',
-        '      <div style="background-color: #c0392b; color: white; padding: 4px 8px; border-radius: 4px;">Hard</div>\n',
-        f'      <div style="margin-left: 8px;">{leetcode_stats["hardSolved"]} / {leetcode_stats["totalHard"]}</div>\n',
-        '    </div>\n',
-        '  </div>\n',
-        '</div>\n',
-        '<br>\n'
+        f"![LeetCode Progress](https://img.shields.io/badge/Easy-{leetcode_stats['easySolved']}-green?style=flat-square)\n",
+        f"![LeetCode Progress](https://img.shields.io/badge/Medium-{leetcode_stats['mediumSolved']}-yellow?style=flat-square)\n",
+        f"![LeetCode Progress](https://img.shields.io/badge/Hard-{leetcode_stats['hardSolved']}-red?style=flat-square)\n",
+        f"![LeetCode Progress](https://img.shields.io/badge/Total-{leetcode_stats['totalSolved']}-blue?style=flat-square)\n"
     ]
 
-    content = content[:start_idx] + leetcode_content + content[end_idx:]
+    content = content[:leetcode_start_idx] + leetcode_content + content[leetcode_end_idx:]
 
     # Update InterviewBit stats
-    interviewbit_start_idx = content.index("### InterviewBit Stats:\n") + 1
-    interviewbit_end_idx = interviewbit_start_idx + 10
+    interviewbit_start_idx = content.index("## InterviewBit Progress\n") + 1
+    interviewbit_end_idx = interviewbit_start_idx + 4
 
     interviewbit_content = [
-        '<div align="center" style="border: 2px solid #e1e4e8; border-radius: 8px; padding: 20px; background-color: #1c1c1c; color: #e1e4e8;">\n',
-        '  <h2 style="color: #f0db4f;">InterviewBit Data</h2>\n',
-        '  <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 20px;">\n',
-        '    <div style="text-align: center;">\n',
-        '      <div style="font-size: 24px; color: #61dafb;">Easy</div>\n',
-        f'      <div style="font-size: 32px; font-weight: bold;">{interviewbit_stats["easy"]}</div>\n',
-        '    </div>\n',
-        '    <div style="text-align: center;">\n',
-        '      <div style="font-size: 24px; color: #61dafb;">Medium</div>\n',
-        f'      <div style="font-size: 32px; font-weight: bold;">{interviewbit_stats["medium"]}</div>\n',
-        '    </div>\n',
-        '    <div style="text-align: center;">\n',
-        '      <div style="font-size: 24px; color: #61dafb;">Hard</div>\n',
-        f'      <div style="font-size: 32px; font-weight: bold;">{interviewbit_stats["hard"]}</div>\n',
-        '    </div>\n',
-        '    <div style="text-align: center;">\n',
-        '      <div style="font-size: 24px; color: #61dafb;">Total</div>\n',
-        f'      <div style="font-size: 32px; font-weight: bold;">{interviewbit_stats["total"]}</div>\n',
-        '    </div>\n',
-        '  </div>\n',
-        '</div>\n'
+        f"![InterviewBit Progress](https://img.shields.io/badge/Easy-{interviewbit_stats['easy']}-green?style=flat-square)\n",
+        f"![InterviewBit Progress](https://img.shields.io/badge/Medium-{interviewbit_stats['medium']}-yellow?style=flat-square)\n",
+        f"![InterviewBit Progress](https://img.shields.io/badge/Hard-{interviewbit_stats['hard']}-red?style=flat-square)\n",
+        f"![InterviewBit Progress](https://img.shields.io/badge/Total-{interviewbit_stats['total']}-blue?style=flat-square)\n"
     ]
 
     content = content[:interviewbit_start_idx] + interviewbit_content + content[interviewbit_end_idx:]
@@ -116,6 +88,7 @@ if __name__ == "__main__":
         update_readme(leetcode_stats, interviewbit_stats)
     else:
         print("Failed to fetch LeetCode or InterviewBit stats")
+
 
 
 
