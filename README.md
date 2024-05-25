@@ -35,11 +35,10 @@
 ![Overall Stats](https://github-readme-stats.vercel.app/api?username=kasireddyasam&theme=dark&hide_border=false&include_all_commits=true&count_private=true)
 
 ## LeetCode Progress
-![LeetCode Progress](https://img.shields.io/badge/Easy-0-green?style=flat-square)
-![LeetCode Progress](https://img.shields.io/badge/Medium-0-yellow?style=flat-square)
-![LeetCode Progress](https://img.shields.io/badge/Hard-0-red?style=flat-square)
-![LeetCode Progress](https://img.shields.io/badge/Total-0-blue?style=flat-square)
-
+![LeetCode Progress](https://img.shields.io/badge/Easy-44-green?style=flat-square)
+![LeetCode Progress](https://img.shields.io/badge/Medium-39-yellow?style=flat-square)
+![LeetCode Progress](https://img.shields.io/badge/Hard-7-red?style=flat-square)
+![LeetCode Progress](https://img.shields.io/badge/Total-90-blue?style=flat-square)
 
 ## InterviewBit Progress
 ![InterviewBit Progress](https://img.shields.io/badge/Easy-0-green?style=flat-square)
@@ -52,7 +51,6 @@
 <div style="font-family: 'Courier New', Courier, monospace; font-size: 26px; color: #f0db4f; text-align: center; margin-top: 20px; padding: 10px; border: 2px solid #f0db4f; border-radius: 10px; background-color: #1e1e2e; font-style: italic; text-shadow: 1px 1px 2px #000;">
     <em><strong>In order to succeed, your desire for success should be greater than your fear of failure</strong></em>
 </div>
-
 
 
 
