@@ -1,4 +1,4 @@
-name: Update README with LeetCode and InterviewBit Stats
+name: Update README with LeetCode Stats
 
 on:
   schedule:
@@ -22,13 +22,12 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install requests beautifulsoup4
+          pip install requests
 
       - name: Update README
         run: |
-          python update_readme.py
+          python update_leetcode_readme.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
 
 
