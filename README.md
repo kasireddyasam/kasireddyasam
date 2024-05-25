@@ -41,10 +41,11 @@
 ![LeetCode Progress](https://img.shields.io/badge/Total-90-blue?style=flat-square)
 
 ## InterviewBit Progress
-![InterviewBit Progress](https://img.shields.io/badge/Easy-0-green?style=flat-square)
-![InterviewBit Progress](https://img.shields.io/badge/Medium-0-yellow?style=flat-square)
-![InterviewBit Progress](https://img.shields.io/badge/Hard-0-red?style=flat-square)
-![InterviewBit Progress](https://img.shields.io/badge/Total-0-blue?style=flat-square)
+![InterviewBit Progress](https://img.shields.io/badge/Easy-57-green?style=flat-square)
+![InterviewBit Progress](https://img.shields.io/badge/Medium-62-yellow?style=flat-square)
+![InterviewBit Progress](https://img.shields.io/badge/Hard-7-red?style=flat-square)
+![InterviewBit Progress](https://img.shields.io/badge/Total-954-blue?style=flat-square)
+
 
 ### ✍ My Life Line
 
