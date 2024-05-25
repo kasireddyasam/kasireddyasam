@@ -1,28 +1,3 @@
-def update_readme(interviewbit_stats):
-    readme_path = "README.md"
-    with open(readme_path, "r") as file:
-        content = file.readlines()
-
-    # Locate the section for InterviewBit Progress
-    interviewbit_start_idx = None
-    for idx, line in enumerate(content):
-        if line.strip() == "## InterviewBit Progress":
-            interviewbit_start_idx = idx + 1
-            break
-
-    if interviewbit_start_idx is not None:
-        interviewbit_end_idx = interviewbit_start_idx + 4
-        interviewbit_content = [
-            f"![InterviewBit Progress](https://img.shields.io/badge/Easy-{interviewbit_stats['easy']}-green?style=flat-square)\n",
-            f"![InterviewBit Progress](https://img.shields.io/badge/Medium-{interviewbit_stats['medium']}-yellow?style=flat-square)\n",
-            f"![InterviewBit Progress](https://img.shields.io/badge/Hard-{interviewbit_stats['hard']}-red?style=flat-square)\n",
-            f"![InterviewBit Progress](https://img.shields.io/badge/Total-{interviewbit_stats['total']}-blue?style=flat-square)\n"
-        ]
-        content[interviewbit_start_idx:interviewbit_end_idx] = interviewbit_content
-
-        with open(readme_path, "w") as file:
-            file.writelines(content)
-
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
@@ -70,6 +45,10 @@ def update_readme(interviewbit_stats):
     readme_path = "README.md"
     with open(readme_path, "r") as file:
         content = file.readlines()
+    
+    # Debug: Print the content read from the README.md file
+    print("Original README.md content:")
+    print("".join(content))
 
     # Locate the section for InterviewBit Progress
     interviewbit_start_idx = None
@@ -87,6 +66,10 @@ def update_readme(interviewbit_stats):
             f"![InterviewBit Progress](https://img.shields.io/badge/Total-{interviewbit_stats['total']}-blue?style=flat-square)\n"
         ]
         content[interviewbit_start_idx:interviewbit_end_idx] = interviewbit_content
+
+        # Debug: Print the updated content that will be written to README.md
+        print("Updated README.md content:")
+        print("".join(content))
 
         with open(readme_path, "w") as file:
             file.writelines(content)
