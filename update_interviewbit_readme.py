@@ -23,8 +23,9 @@ def fetch_interviewbit_stats(username):
         easy_solved = problems_solved_section.find_element(By.CLASS_NAME, 'profile-progress-card__stat--easy').find_elements(By.TAG_NAME, 'span')[1].text.strip()
         medium_solved = problems_solved_section.find_element(By.CLASS_NAME, 'profile-progress-card__stat--medium').find_elements(By.TAG_NAME, 'span')[1].text.strip()
         hard_solved = problems_solved_section.find_element(By.CLASS_NAME, 'profile-progress-card__stat--hard').find_elements(By.TAG_NAME, 'span')[1].text.strip()
-        total_solved = problems_solved_section.find_element(By.CLASS_NAME, 'profile-progress-card__stat--total').find_elements(By.TAG_NAME, 'span')[1].text.strip()
         
+        total_solved = str(int(easy_solved) + int(medium_solved) + int(hard_solved))  # Calculate total
+
         stats = {
             "easy": easy_solved,
             "medium": medium_solved,
