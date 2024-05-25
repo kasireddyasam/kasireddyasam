@@ -34,11 +34,41 @@
 ![Streak Stats](https://github-readme-streak-stats.herokuapp.com/?user=kasireddyasam&theme=dark&hide_border=false)
 ![Overall Stats](https://github-readme-stats.vercel.app/api?username=kasireddyasam&theme=dark&hide_border=false&include_all_commits=true&count_private=true)
 
+## 📈 Coding Progress
+
+### LeetCode Stats:
+<!-- LEETCODE-STATS:START -->
+<!-- LEETCODE-STATS:END -->
+
+### InterviewBit Stats:
+<div align="center" style="border: 2px solid #e1e4e8; border-radius: 8px; padding: 20px; background-color: #1c1c1c; color: #e1e4e8;">
+  <h2 style="color: #f0db4f;">InterviewBit Data</h2>
+  <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 20px;">
+    <div style="text-align: center;">
+      <div style="font-size: 24px; color: #61dafb;">Easy</div>
+      <div style="font-size: 32px; font-weight: bold;">0</div>
+    </div>
+    <div style="text-align: center;">
+      <div style="font-size: 24px; color: #61dafb;">Medium</div>
+      <div style="font-size: 32px; font-weight: bold;">0</div>
+    </div>
+    <div style="text-align: center;">
+      <div style="font-size: 24px; color: #61dafb;">Hard</div>
+      <div style="font-size: 32px; font-weight: bold;">0</div>
+    </div>
+    <div style="text-align: center;">
+      <div style="font-size: 24px; color: #61dafb;">Total</div>
+      <div style="font-size: 32px; font-weight: bold;">0</div>
+    </div>
+  </div>
+</div>
+
 ### ✍ My Life Line
 
 <div style="font-family: 'Courier New', Courier, monospace; font-size: 26px; color: #f0db4f; text-align: center; margin-top: 20px; padding: 10px; border: 2px solid #f0db4f; border-radius: 10px; background-color: #1e1e2e; font-style: italic; text-shadow: 1px 1px 2px #000;">
     <em><strong>In order to succeed, your desire for success should be greater than your fear of failure</strong></em>
 </div>
+
 
 
 
