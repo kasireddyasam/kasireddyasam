@@ -14,13 +14,23 @@ def fetch_interviewbit_stats(username):
     response = requests.get(url)
     if response.status_code == 200:
         soup = BeautifulSoup(response.content, 'html.parser')
-        stats = {
-            "rank": soup.find("div", {"class": "stat"}).text.strip(),
-            "score": soup.find_all("div", {"class": "stat"})[1].text.strip(),
-            "problems_solved": soup.find_all("div", {"class": "stat"})[2].text.strip(),
-            "streak": soup.find_all("div", {"class": "stat"})[3].text.strip()
-        }
-        return stats
+        
+        try:
+            easy = soup.find("div", {"class": "profile-progress-card_stat profile-progress-card_stat--easy"}).find_all("span")[1].text.strip()
+            medium = soup.find("div", {"class": "profile-progress-card_stat profile-progress-card_stat--medium"}).find_all("span")[1].text.strip()
+            hard = soup.find("div", {"class": "profile-progress-card_stat profile-progress-card_stat--hard"}).find_all("span")[1].text.strip()
+            total = soup.find("div", {"class": "profile-progress-card_stat profile-progress-card_stat--total"}).find_all("span")[1].text.strip()
+            
+            stats = {
+                "easy": easy,
+                "medium": medium,
+                "hard": hard,
+                "total": total
+            }
+            return stats
+
+        except AttributeError as e:
+            raise AttributeError("Failed to find the necessary elements on the InterviewBit profile page. The page structure might have changed.") from e
     else:
         return None
 
@@ -41,18 +51,15 @@ def update_readme(leetcode_stats, interviewbit_stats):
         f'      <div style="font-size: 32px; font-weight: bold;">{leetcode_stats["totalSolved"]}</div>\n',
         f'      <div style="color: #61dafb;">{leetcode_stats["totalQuestions"]}</div>\n',
         '    </div>\n',
-        '    <button style="background-color: #e74c3c; border: none; padding: 10px 20px; border-radius: 4px; color: white; cursor: pointer;">Remove</button>\n',
-        '  </div>\n',
-        '  <div style="margin-top: 16px;">\n',
-        '    <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 8px;">\n',
+        '    <div style="text-align: center;">\n',
         '      <div style="background-color: #27ae60; color: white; padding: 4px 8px; border-radius: 4px;">Easy</div>\n',
         f'      <div style="margin-left: 8px;">{leetcode_stats["easySolved"]} / {leetcode_stats["totalEasy"]}</div>\n',
         '    </div>\n',
-        '    <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 8px;">\n',
+        '    <div style="text-align: center;">\n',
         '      <div style="background-color: #f39c12; color: white; padding: 4px 8px; border-radius: 4px;">Medium</div>\n',
         f'      <div style="margin-left: 8px;">{leetcode_stats["mediumSolved"]} / {leetcode_stats["totalMedium"]}</div>\n',
         '    </div>\n',
-        '    <div style="display: flex; justify-content: center; align-items: center;">\n',
+        '    <div style="text-align: center;">\n',
         '      <div style="background-color: #c0392b; color: white; padding: 4px 8px; border-radius: 4px;">Hard</div>\n',
         f'      <div style="margin-left: 8px;">{leetcode_stats["hardSolved"]} / {leetcode_stats["totalHard"]}</div>\n',
         '    </div>\n',
@@ -63,20 +70,20 @@ def update_readme(leetcode_stats, interviewbit_stats):
         '  <h2 style="color: #f0db4f;">InterviewBit Data</h2>\n',
         '  <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 20px;">\n',
         '    <div style="text-align: center;">\n',
-        '      <div style="font-size: 24px; color: #61dafb;">Rank</div>\n',
-        f'      <div style="font-size: 32px; font-weight: bold;">{interviewbit_stats["rank"]}</div>\n',
+        '      <div style="font-size: 24px; color: #61dafb;">Easy</div>\n',
+        f'      <div style="font-size: 32px; font-weight: bold;">{interviewbit_stats["easy"]}</div>\n',
         '    </div>\n',
         '    <div style="text-align: center;">\n',
-        '      <div style="font-size: 24px; color: #61dafb;">Score</div>\n',
-        f'      <div style="font-size: 32px; font-weight: bold;">{interviewbit_stats["score"]}</div>\n',
+        '      <div style="font-size: 24px; color: #61dafb;">Medium</div>\n',
+        f'      <div style="font-size: 32px; font-weight: bold;">{interviewbit_stats["medium"]}</div>\n',
         '    </div>\n',
         '    <div style="text-align: center;">\n',
-        '      <div style="font-size: 24px; color: #61dafb;">Problems Solved</div>\n',
-        f'      <div style="font-size: 32px; font-weight: bold;">{interviewbit_stats["problems_solved"]}</div>\n',
+        '      <div style="font-size: 24px; color: #61dafb;">Hard</div>\n',
+        f'      <div style="font-size: 32px; font-weight: bold;">{interviewbit_stats["hard"]}</div>\n',
         '    </div>\n',
         '    <div style="text-align: center;">\n',
-        '      <div style="font-size: 24px; color: #61dafb;">Streak</div>\n',
-        f'      <div style="font-size: 32px; font-weight: bold;">{interviewbit_stats["streak"]}</div>\n',
+        '      <div style="font-size: 24px; color: #61dafb;">Total</div>\n',
+        f'      <div style="font-size: 32px; font-weight: bold;">{interviewbit_stats["total"]}</div>\n',
         '    </div>\n',
         '  </div>\n',
         '</div>\n'
@@ -98,4 +105,5 @@ if __name__ == "__main__":
         update_readme(leetcode_stats, interviewbit_stats)
     else:
         print("Failed to fetch LeetCode or InterviewBit stats")
+
 
