@@ -70,7 +70,7 @@
 </p>
 
 ## 🚀 Total Progress 🚀
-<p align="center">
+<p>
   <img src="https://img.shields.io/badge/Easy-150-2E8B57?style=for-the-badge">
   <img src="https://img.shields.io/badge/Medium-159-FFD700?style=for-the-badge">
   <img src="https://img.shields.io/badge/Hard-18-DC143C?style=for-the-badge">
