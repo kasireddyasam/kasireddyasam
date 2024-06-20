@@ -55,7 +55,7 @@
   <img src="https://img.shields.io/badge/Easy-57-green?style=for-the-badge">
   <img src="https://img.shields.io/badge/Medium-63-yellow?style=for-the-badge">
   <img src="https://img.shields.io/badge/Hard-7-red?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Total-130-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Total-127-blue?style=for-the-badge">
 </p>
 
 ### GeeksforGeeks Progress
