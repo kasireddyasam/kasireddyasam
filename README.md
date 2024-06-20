@@ -34,17 +34,49 @@
 ![Streak Stats](https://github-readme-streak-stats.herokuapp.com/?user=kasireddyasam&theme=dark&hide_border=false)
 ![Overall Stats](https://github-readme-stats.vercel.app/api?username=kasireddyasam&theme=dark&hide_border=false&include_all_commits=true&count_private=true)
 
-## LeetCode Progress
-![LeetCode Progress](https://img.shields.io/badge/Easy-44-green?style=flat-square)
-![LeetCode Progress](https://img.shields.io/badge/Medium-39-yellow?style=flat-square)
-![LeetCode Progress](https://img.shields.io/badge/Hard-7-red?style=flat-square)
-![LeetCode Progress](https://img.shields.io/badge/Total-90-blue?style=flat-square)
+## Coding Platform Progress
 
-## InterviewBit Progress
-![InterviewBit Progress](https://img.shields.io/badge/Easy-57-green?style=flat-square)
-![InterviewBit Progress](https://img.shields.io/badge/Medium-62-yellow?style=flat-square)
-![InterviewBit Progress](https://img.shields.io/badge/Hard-7-red?style=flat-square)
-![InterviewBit Progress](https://img.shields.io/badge/Total-954-blue?style=flat-square)
+### LeetCode Progress
+<p>
+  <a href="https://leetcode.com/u/kasireddy_13177/" target="_blank">
+    <img src="https://img.shields.io/badge/LeetCode-Profile-brightgreen?style=for-the-badge">
+  </a>
+  <img src="https://img.shields.io/badge/Easy-77-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Medium-67-yellow?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Hard-10-red?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Total-154-blue?style=for-the-badge">
+</p>
+
+### InterviewBit Progress
+<p>
+  <a href="https://www.interviewbit.com/profile/kasireddy-asam/" target="_blank">
+    <img src="https://img.shields.io/badge/InterviewBit-Profile-brightgreen?style=for-the-badge">
+  </a>
+  <img src="https://img.shields.io/badge/Easy-57-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Medium-63-yellow?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Hard-7-red?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Total-130-blue?style=for-the-badge">
+</p>
+
+### GeeksforGeeks Progress
+<p>
+  <a href="https://www.geeksforgeeks.org/user/kasireddyasam13177/" target="_blank">
+    <img src="https://img.shields.io/badge/GeeksforGeeks-Profile-brightgreen?style=for-the-badge">
+  </a>
+  <img src="https://img.shields.io/badge/Easy-16-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Medium-29-yellow?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Hard-1-red?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Total-46-blue?style=for-the-badge">
+</p>
+
+## 🚀 Total Progress 🚀
+<p align="center">
+  <img src="https://img.shields.io/badge/Easy-150-2E8B57?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Medium-159-FFD700?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Hard-18-DC143C?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Total-327-1E90FF?style=for-the-badge">
+</p>
+
 
 
 ### ✍ My Life Line
