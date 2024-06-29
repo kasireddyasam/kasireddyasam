@@ -41,10 +41,10 @@
   <a href="https://leetcode.com/u/kasireddy_13177/" target="_blank">
     <img src="https://img.shields.io/badge/LeetCode-Profile-brightgreen?style=for-the-badge">
   </a>
-  <img src="https://img.shields.io/badge/Easy-77-green?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Medium-67-yellow?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Hard-10-red?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Total-154-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Easy-87-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Medium-83-yellow?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Hard-12-red?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Total-183-blue?style=for-the-badge">
 </p>
 
 ### InterviewBit Progress
@@ -71,10 +71,10 @@
 
 ## 🚀 Total Progress 🚀
 <p>
-  <img src="https://img.shields.io/badge/Easy-150-2E8B57?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Medium-159-FFD700?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Hard-18-DC143C?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Total-327-1E90FF?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Easy-160-2E8B57?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Medium-175-FFD700?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Hard-19-DC143C?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Total-354-1E90FF?style=for-the-badge">
 </p>
 
 
