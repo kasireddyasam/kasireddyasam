@@ -1,9 +1,11 @@
-# 💫 About Me:
-🎓 I'm currently a student at NIT Calicut, pursuing a degree in Electrical Engineering.<br>
-🌱 I’m currently learning more about advanced Machine Learning techniques and AI.<br>
-💬 Ask me about anything related to DSA, Python, SQL, and Machine Learning.<br>
-📫 How to reach me: [kasireddy2024@gmail.com](mailto:kasireddy2024@gmail.com)<br>
-🔗 Connect with me on LinkedIn: [Kasi Reddy Asam](https://www.linkedin.com/in/kasireddy-asam-bb8038283/)
+### 💫 About Me  
+
+- 🎓 **Final-year Electrical Engineering student (NIT Calicut, 2025 Graduate)** with a strong passion for **Software Development & AI/ML**.
+- 🏆 Exploring Full-Stack Development, with hands-on experience in building web applications and implementing ML models. 
+- 💡 Skilled in **DSA, DBMS, SQL, Full-Stack Development (React, Node.js, Express.js), and Machine Learning**.  
+- 🚀 First-generation student, passionate about learning, adapting, and growing with organizations to drive impact.
+- 📩 **Reach me:** [kasireddy2024@gmail.com](mailto:kasireddy2024@gmail.com) | 🔗 **LinkedIn:** [Kasi Reddy Asam](https://www.linkedin.com/in/kasireddy-asam-bb8038283/)  
+
 
 ## 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=LinkedIn&logoColor=white)](https://www.linkedin.com/in/kasireddy-asam-bb8038283/) [![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?logo=GitHub&logoColor=white)](https://github.com/kasireddyasam)
@@ -42,7 +44,6 @@ Here are some of the technologies and tools I have experience with:
 
 # 📊 GitHub Stats:
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=kasireddyasam&theme=dark&hide_border=false)
-![Streak Stats](https://github-readme-streak-stats.herokuapp.com/?user=kasireddyasam&theme=dark&hide_border=false)
 ![Overall Stats](https://github-readme-stats.vercel.app/api?username=kasireddyasam&theme=dark&hide_border=false&include_all_commits=true&count_private=true)
 
 ## Coding Platform Progress
@@ -52,10 +53,10 @@ Here are some of the technologies and tools I have experience with:
   <a href="https://leetcode.com/u/kasireddy_13177/" target="_blank">
     <img src="https://img.shields.io/badge/LeetCode-Profile-brightgreen?style=for-the-badge">
   </a>
-  <img src="https://img.shields.io/badge/Easy-131-green?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Medium-193-yellow?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Hard-38-red?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Total-362-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Easy-156-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Medium-257-yellow?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Hard-48-red?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Total-461-blue?style=for-the-badge">
 </p>
 
 ### InterviewBit Progress
@@ -82,12 +83,11 @@ Here are some of the technologies and tools I have experience with:
 
 ## 🚀 Total Progress 🚀
 <p>
-  <img src="https://img.shields.io/badge/Easy-205-2E8B57?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Medium-276-FFD700?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Hard-45-DC143C?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Total-526-1E90FF?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Easy-230-2E8B57?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Medium-320-FFD700?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Hard-55-DC143C?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Total-605-1E90FF?style=for-the-badge">
 </p>
-
 
 
 ### ✍ My Life Line
