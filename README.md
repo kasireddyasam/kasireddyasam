@@ -4,7 +4,7 @@
 - 🏆 Exploring Full-Stack Development, with hands-on experience in building web applications and implementing ML models. 
 - 💡 Skilled in **DSA, DBMS, SQL, Full-Stack Development (React, Node.js, Express.js), and Machine Learning**.  
 - 🚀 First-generation student, passionate about learning, adapting, and growing with organizations to drive impact.
-- 📩 **Reach me:** [kasireddy2024@gmail.com](mailto:kasireddy2024@gmail.com) | 🔗 **LinkedIn:** [Kasi Reddy Asam](https://www.linkedin.com/in/kasireddy-asam-bb8038283/)  
+- 📩 **Reach me:** [kasireddy2024@gmail.com](mailto:kasireddy2024@gmail.com) 
 
 
 ## 🌐 Socials:
